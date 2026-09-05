@@ -102,8 +102,8 @@ test('styleString produces CSS a template can use', () => {
 });
 
 test('every framework package renders the same badge', () => {
-  /* The reason this package exists. A merchant running @numra/react on one
-     page and @numra/vue on another must not see two different badges, so the
+  /* The reason this package exists. A merchant running @getnumra/react on one
+     page and @getnumra/vue on another must not see two different badges, so the
      label, the colours and the geometry are decided once, here. */
   const b = badgeParts(rated);
   assert.deepEqual(Object.keys(b).sort(), ['container', 'dot', 'label', 'score', 'scoreStyle', 'state']);

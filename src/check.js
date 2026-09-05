@@ -6,7 +6,7 @@
    and a key in a bundle is a key in everyone's hands.
 
    It talks to the endpoint one of the server packages mounts for you —
-   @numra/express, fastify, next, nuxt, numra/laravel, or Numra\Handlers in
+   @getnumra/express, fastify, next, nuxt, numra/laravel, or Numra\Handlers in
    plain PHP. All of them answer the same three paths with the same shapes,
    which is what makes one browser client enough for all of them.
    ═══════════════════════════════════════════════════════════════════════════ */

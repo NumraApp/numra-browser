@@ -1,14 +1,14 @@
-# @numra/browser
+# @getnumra/browser
 
 **The risk states, badge styling and request logic shared by the Numra packages for React, Vue, Svelte and Angular.**
 
-[![npm version](https://img.shields.io/npm/v/@numra/browser)](https://www.npmjs.com/package/@numra/browser) [![npm downloads](https://img.shields.io/npm/dm/@numra/browser)](https://www.npmjs.com/package/@numra/browser) [![licence: MIT](https://img.shields.io/npm/l/@numra/browser)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@getnumra/browser)](https://www.npmjs.com/package/@getnumra/browser) [![npm downloads](https://img.shields.io/npm/dm/@getnumra/browser)](https://www.npmjs.com/package/@getnumra/browser) [![licence: MIT](https://img.shields.io/npm/l/@getnumra/browser)](LICENSE)
 
-What `@numra/react`, `@numra/vue` and `@numra/svelte` share. You do not
+What `@getnumra/react`, `@getnumra/vue` and `@getnumra/svelte` share. You do not
 normally install this directly — install the one for your framework.
 
 ```bash
-npm install @numra/browser   # only if you are writing your own binding
+npm install @getnumra/browser   # only if you are writing your own binding
 ```
 
 Zero dependencies, no build step, and **no API key** — there is no option to
@@ -30,17 +30,17 @@ both had already gone wrong once:
   React hook was missing this until the Vue tests went looking for it — which
   is the whole argument for this package in one sentence.
 
-Same reasoning as `createHandlers` in `@numra/core`: the logic that must not
+Same reasoning as `createHandlers` in `@getnumra/core`: the logic that must not
 drift between framework packages does not live in any of them.
 
-It is deliberately **not** `@numra/core`. That package holds an API key and
+It is deliberately **not** `@getnumra/core`. That package holds an API key and
 refuses to run in a browser. Two cores, on opposite sides of the credential
 boundary, is the point rather than an accident.
 
 ## Writing your own binding
 
 ```js
-import { createCheckController, badgeParts } from '@numra/browser';
+import { createCheckController, badgeParts } from '@getnumra/browser';
 
 const controller = createCheckController({
   endpoint: '/api/numra',
@@ -96,11 +96,11 @@ Server:
 
 | Package | Repository |
 |---|---|
-| `@numra/core` | [numra-js-core](https://github.com/NumraApp/numra-js-core) |
-| `@numra/express` | [numra-express](https://github.com/NumraApp/numra-express) |
-| `@numra/fastify` | [numra-fastify](https://github.com/NumraApp/numra-fastify) |
-| `@numra/next` | [numra-next](https://github.com/NumraApp/numra-next) |
-| `@numra/nuxt` | [numra-nuxt](https://github.com/NumraApp/numra-nuxt) |
+| `@getnumra/core` | [numra-js-core](https://github.com/NumraApp/numra-js-core) |
+| `@getnumra/express` | [numra-express](https://github.com/NumraApp/numra-express) |
+| `@getnumra/fastify` | [numra-fastify](https://github.com/NumraApp/numra-fastify) |
+| `@getnumra/next` | [numra-next](https://github.com/NumraApp/numra-next) |
+| `@getnumra/nuxt` | [numra-nuxt](https://github.com/NumraApp/numra-nuxt) |
 | `numra/numra-php` | [numra-php](https://github.com/NumraApp/numra-php) |
 | `numra/laravel` | [numra-laravel](https://github.com/NumraApp/numra-laravel) |
 
@@ -108,11 +108,11 @@ Browser:
 
 | Package | Repository |
 |---|---|
-| `@numra/browser` | [numra-browser](https://github.com/NumraApp/numra-browser) — this repo |
-| `@numra/react` | [numra-react](https://github.com/NumraApp/numra-react) |
-| `@numra/vue` | [numra-vue](https://github.com/NumraApp/numra-vue) |
-| `@numra/svelte` | [numra-svelte](https://github.com/NumraApp/numra-svelte) |
-| `@numra/angular` | [numra-angular](https://github.com/NumraApp/numra-angular) |
+| `@getnumra/browser` | [numra-browser](https://github.com/NumraApp/numra-browser) — this repo |
+| `@getnumra/react` | [numra-react](https://github.com/NumraApp/numra-react) |
+| `@getnumra/vue` | [numra-vue](https://github.com/NumraApp/numra-vue) |
+| `@getnumra/svelte` | [numra-svelte](https://github.com/NumraApp/numra-svelte) |
+| `@getnumra/angular` | [numra-angular](https://github.com/NumraApp/numra-angular) |
 
 Documentation for all of them is at [numra.ma/docs](https://numra.ma/docs).
 

@@ -1,5 +1,5 @@
 {
-  "name": "@numra/browser",
+  "name": "@getnumra/browser",
   "version": "1.0.0",
   "description": "Shared browser logic for the Numra UI packages — risk states, badge styling and the call to your own backend. No API key, ever.",
   "license": "MIT",

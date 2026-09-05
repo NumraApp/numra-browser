@@ -1,6 +1,6 @@
 # Security policy
 
-`@numra/browser` runs in the page, holds no credential, and is the shared floor
+`@getnumra/browser` runs in the page, holds no credential, and is the shared floor
 under four front-end packages. A weakness here is a weakness in all four at
 once, so please treat one accordingly.
 

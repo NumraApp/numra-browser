@@ -1,4 +1,4 @@
-# Contributing to @numra/browser
+# Contributing to @getnumra/browser
 
 Patches are welcome. This package is what four front-end packages agree on, so
 a change here changes what a merchant's storefront says about a phone number in

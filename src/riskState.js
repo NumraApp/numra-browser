@@ -6,8 +6,8 @@
    than in four, because four copies of "blacklisted outranks the band" is
    four chances for one of them to quietly stop being true.
 
-   Lifted out of @numra/react unchanged when @numra/vue and @numra/svelte
-   arrived. Same argument as createHandlers in @numra/core: the logic that
+   Lifted out of @getnumra/react unchanged when @getnumra/vue and @getnumra/svelte
+   arrived. Same argument as createHandlers in @getnumra/core: the logic that
    must not drift between framework packages does not live in any of them. */
 
 export const RISK_STATES = Object.freeze({

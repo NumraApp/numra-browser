@@ -48,11 +48,11 @@ test('no source file can reach the Numra API directly', () => {
   }
 });
 
-test('the package does not depend on @numra/core', () => {
-  /* @numra/core throws in a browser by design. Depending on it here would
+test('the package does not depend on @getnumra/core', () => {
+  /* @getnumra/core throws in a browser by design. Depending on it here would
      either break the bundle or tempt someone to remove that guard. */
   const deps = { ...pkg.dependencies, ...pkg.devDependencies };
-  assert.ok(!('@numra/core' in deps), '@numra/core must not be a dependency of a browser package');
+  assert.ok(!('@getnumra/core' in deps), '@getnumra/core must not be a dependency of a browser package');
 });
 
 test('the package has no dependencies at all', () => {
